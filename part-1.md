@@ -43,7 +43,13 @@ $ which cargo
 There's a project that has Rust bindings to [`libtcod`](http://roguecentral.org/doryen/libtcod/) by the name of [tcod-rs](https://github.com/tomassedovic/tcod-rs). We aren't going to install `tcod-rs` directly. Instead we'll let Cargo handle that for us, but there is some manual setup involved. We'll address this below.
 
 ### libtcod
-Once upon a time you had to build `libtcod` on your own if you were using `tcod-rs`, but that's not the case anymore. I'm leaving this here with a [link]() to legacy instructions just for historic purposes.
+Once upon a time you had to build `libtcod` on your own if you were using `tcod-rs`, but that's not the case anymore. I'm leaving this here with a [link](https://github.com/jaredonline/dwemthys-blog-posts/blob/282c57e6fcaa15b62e27c7c293c054d030672331/part-1.md#libtcod) to legacy instructions just for historic purposes.
+
+There's only one step for getting `libtcod` to work. You need to install the dependencies:
+
+```sh
+brew install sdl upx wget
+```
 
 ## First pass
 The goal of this is just to get a window to open with the iconic `@` symbol in it. Let's see what we can do.
